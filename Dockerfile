@@ -55,4 +55,4 @@ ENV LANG=C.UTF-8
 ENV PYTHONUNBUFFERED=1
 
 # Set the entry point for the container
-CMD ["sh", "-c", "export FLASK_RUN_PORT=5000 && python /app/app.py"]
+ENTRYPOINT ["/app/start.sh"]
